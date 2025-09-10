@@ -8,5 +8,5 @@ apt-get update && apt-get install sudo -y
 bash /tmp/linux-on-ibm-z-scripts/Kind/${version}/build_kind.sh -y
 tar cvfz kind-${version}-linux-s390x.tar.gz kind/bin/kind
 # Create container image - script above will have already created the image
-docker save -o kind-${version}-linux-s390x.container.tar kindest/base:s390x
+docker save -o kind-${version}-linux-s390x.container.tar kindest/base
 exit 0
